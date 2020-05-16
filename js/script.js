@@ -1,8 +1,21 @@
-"use strict"
 
+const nomberOfFilms = +prompt("Сколько фильмов ві уже посмотрели", "");
 
-let number = 5;
-const leftBorderWidth = 1;
+const personalMovieDB = {
+    count: nomberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 
-number = 10;
-console.log(number);
+};
+
+const a = prompt("Один из просмотренных фильмов", ""),
+      b = prompt("на сколько оцение", ""),
+      c = prompt("Один из просмотренных фильмов", ""),
+      d = prompt("на сколько оцение", "");
+
+      personalMovieDB.movies[a] = b;
+      personalMovieDB.movies[c] = d;
+
+      console.log(personalMovieDB);
